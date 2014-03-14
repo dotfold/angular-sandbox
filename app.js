@@ -1,6 +1,6 @@
 
 
-var app = angular.module( 'app', [  'movideo.admin.playlist' ] );
+var app = angular.module( 'app', [  'upload' ] );
 
 // app.factory('BaseMixin', function() {
 //   return function BaseMixin() {
@@ -42,7 +42,7 @@ var app = angular.module( 'app', [  'movideo.admin.playlist' ] );
 //       decorate: function(mixins, model){
 
 //         mixins.forEach(function(mixinName) {
-          
+
 //           var decorator = getDecoratorByName(mixinName);
 //           if (decorator) {
 //             decorator.call(model);
@@ -50,7 +50,7 @@ var app = angular.module( 'app', [  'movideo.admin.playlist' ] );
 //         });
 
 //         return model;
-//       }  
+//       }
 //   }
 
 // });
@@ -68,7 +68,3 @@ var app = angular.module( 'app', [  'movideo.admin.playlist' ] );
 //   $scope.newBase = newBase;
 //   // $scope.xBase = xbase;
 // });
-
-
-  
-

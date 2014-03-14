@@ -5,13 +5,51 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.js"></script>
     <script src="app.js"></script>
-    <script src="Models.js"></script>
+<!--<script src="Models.js"></script> -->
+    <script src="UploadDirectiveController.js"></script>
+<!--<script src="UploadDirectiveView.html"></script> -->
     <!-- <script src="MediaModule.js"></script> -->
     <!-- <script src="MediaController.js"></script> -->
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"></link>
+    <style type="text/css">
+
+      .droptargetOver {
+        fill: #2badf3;
+        -webkit-transition: fill 150ms linear;
+        transition: fill 150ms linear;
+      }
+
+      .dropcontainer {
+        padding: 0;
+        margin: 0;
+        width: 0px;
+        height: 0px;
+        margin-left: auto;
+        margin-right: 50%;
+      }
+
+      .droptarget {
+        position: absolute;
+
+        background-color: #f3f3f3;
+        fill: #e5f5fe;
+        -webkit-transition: fill 150ms linear;
+        transition: fill 150ms linear;
+      }
+
+
+/*      .droptarget:hover {
+        fill: #2badf3;
+        -webkit-transition: fill 300ms linear;
+        transition: fill 300ms linear;
+      }*/
+
+    </style>
   </head>
 
   <body>
-    
+
     <!-- <div ng-controller="MediaModuleCtrl">
        <input type="text" ng-model="format"/>
       <div>Time format is: {{format}}</div>
@@ -21,11 +59,15 @@
 
     </div> -->
 
-    <div ng-controller="PlaylistCtrl">
+<!--     <div ng-controller="PlaylistCtrl">
 
       <pre>{{navs}}</pre>
 
+    </div> -->
+    <div class="dropcontainer">
+        <mv-upload-target mv-upload-over-class="droptargetOver" ></mv-upload-target>
     </div>
+
 
 
 
